@@ -1,9 +1,12 @@
 package student;
 
+import collegePerson.CollegePerson;
+import db.DB;
+
 /**
  * Created by Groovy on 24-Jan-16.
  */
-public class Student {
+public class Student extends CollegePerson{
     private int id;
     private String name;
 
@@ -15,6 +18,10 @@ public class Student {
         this.id = id;
         this.name = name;
         this.surname = surname;
+    }
+
+    public void addToDb(Student student){
+        DB.getInstance().getStudents().put(student.getId(), student);
     }
 
     public void setName(String name) {
