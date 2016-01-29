@@ -12,6 +12,8 @@ public class Trainee extends CollegePerson{
     private String surname;
     List<Integer> courseIds;
 
+    public Trainee(){}
+
     public Trainee(int id, String name, String surname) {
         this.id = id;
         this.name = name;

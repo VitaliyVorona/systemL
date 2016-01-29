@@ -14,6 +14,8 @@ public class Student extends CollegePerson{
         return name;
     }
 
+    public Student(){}
+
     public Student(int id, String name, String surname) {
         this.id = id;
         this.name = name;

@@ -4,6 +4,7 @@ package controller;
 import collegePerson.CollegePerson;
 import collegePerson.CollegePersonDao;
 import course.Course;
+import db.CourseCounter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,10 +37,10 @@ public class Controller {
         name = scanner.nextLine();
         System.out.print("Course description:     ");
         description = scanner.nextLine();
-        System.out.print("Course description:     ");
+        System.out.print("Course startDate:     ");
         startDate = scanner.nextLine();
-        System.out.print("Course description:     ");
+        System.out.print("Course endDate:     ");
         endDate = scanner.nextLine();
-        Course course = new Course(name, description, endDate);
+        Course course = new Course(name, description, startDate, endDate);
     }
 }
